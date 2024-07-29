@@ -1,0 +1,141 @@
+.home{
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+.sidenav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidenav a{
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.sidenav a:hover{
+    color: rgba(214, 46, 51, 0.4);
+}
+.closeIcon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+}
+.homeContent span{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+.content .singer h2{
+    background-color: rgba(214, 46, 51, 0.6);
+    color: white;
+    padding: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.content .singer p{
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 0;
+    display: none;
+}
+.timer{
+    background-image: url(../images/invitation.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: 350px;
+}
+.time{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contact .row h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: #444;
+}
+.contact .row > p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+}
+.details h5{
+    font-size: 18px;
+    font-weight: 900;
+    color: #444;
+}
+.grey{
+    color: #777;
+}
+.contact .details .links li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #999;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.contact .details .links li a{
+    color: #777;
+}
+.contact .details .links li:hover{
+    background-color: #D62E33;
+    border-color: #D62E33;
+}
+.contact .details .links li:hover a{
+    color: white;
+}
+.contact .form button{
+    border: 0;
+    background-color: #D62E33;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0;
+}
+::placeholder{
+    color: #777 !important;
+}
+@media screen and (max-width: 767px) {
+    .timer .overlay .container{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .time{
+        padding: 10px !important;
+    }
+    .time.days{
+        margin-top: 16px;
+    }
+    .singer{
+        width: 75% !important;
+    }
+}
